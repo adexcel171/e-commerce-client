@@ -66,6 +66,7 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
+  text-decoration: none;
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
@@ -99,8 +100,8 @@ const Navbar = () => {
           </SearchContainer> */}
         </Center>
         <Right>
-          <MenuItem> <Link to='/Register' >Register</Link> </MenuItem>
-          <MenuItem> <Link to='/Login' >Login</Link> </MenuItem>
+          <MenuItem> <Link style={{ textDecoration:'none'}} to='/Register' >Register</Link> </MenuItem>
+          <MenuItem> <Link  style={{ textDecoration:'none'}} to='/Login' >Login</Link> </MenuItem>
 
          <MenuItem onClick={handleLogout}>Logout</MenuItem> 
     
