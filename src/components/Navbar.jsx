@@ -99,8 +99,9 @@ const Navbar = () => {
           </SearchContainer> */}
         </Center>
         <Right>
-          <MenuItem>Register</MenuItem>
-         <MenuItem>Sign in  </MenuItem> 
+          <MenuItem> <Link to='/Register' >Register</Link> </MenuItem>
+          <MenuItem> <Link to='/Login' >Login</Link> </MenuItem>
+
          <MenuItem onClick={handleLogout}>Logout</MenuItem> 
     
       
