@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const BASE_URL = "https://mern-api-5owo.onrender.com/api";
+const BASE_URL = "https://mern-api-5owo.onrender.com";
 // const TOKEN =
 //   JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser
 //     .accessToken || "";
