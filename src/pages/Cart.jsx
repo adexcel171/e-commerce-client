@@ -198,7 +198,7 @@ const Cart = () => {
       <Wrapper>
         <Title>Products</Title>
         <Top>
-          <TopButton>CONTINUE SHOPPING</TopButton>
+          {/* <TopButton>CONTINUE SHOPPING</TopButton> */}
           <TopButton onClick={handleClick}> Clear Cart</TopButton>
           <TopTexts>
    

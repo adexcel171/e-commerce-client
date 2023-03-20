@@ -100,8 +100,8 @@ const Navbar = () => {
           </SearchContainer> */}
         </Center>
         <Right>
-          <MenuItem> <Link style={{ textDecoration:'none'}} to='/Register' >Register</Link> </MenuItem>
-          <MenuItem> <Link  style={{ textDecoration:'none'}} to='/Login' >Login</Link> </MenuItem>
+          <MenuItem> <Link style={{ textDecoration:'none', color: 'black'}} to='/Register' >Register</Link> </MenuItem>
+          <MenuItem> <Link  style={{ textDecoration:'none', color: 'black'}} to='/Login' >Login</Link> </MenuItem>
 
          <MenuItem onClick={handleLogout}>Logout</MenuItem> 
     
