@@ -1,23 +1,23 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://media.hookah-shisha.com/media/magefan_blog/top-10-hookahs-of-2018.jpg",
-      title: "HOOKAH SALES",
-      desc: "DON'T COMPROMISE QUALITY HOOKAH POT",
+      img: "https://img.freepik.com/free-photo/charming-man-posing-with-copy-space_23-2148448843.jpg",
+      title: "MEN COLLECTIONS",
+      desc: "DON'T COMPROMISE QUALITY ",
       bg: "f5fafd",
     },
     {
       id: 2,
-      img: "https://emilykylenutrition.com/wp-content/uploads/2020/05/Cannabis-Brownies-from-Emily-Kyle-Nutrition8-e1590527717444.jpg",
-      title: "BROWNIE COLLECTION",
-      desc: "BEAUTIFULLY BAKED BROWNIES",
+      img: "https://ccolor.com/wp-content/uploads/2019/11/fall_black_blog_header.jpg",
+      title: "WOMEN COLLECTION",
+      desc: "BEAUTIFUL WOMEN COLLECTION",
       bg: "fcf1ed",
     },
     {
       id: 3,
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/RAW_hemp_rolling_paper.png/640px-RAW_hemp_rolling_paper.png",
+      img: "https://i.insider.com/5bb7d3979fb84c673c033016?width=700",
       title: "GADGET",
-      desc: "ROLLING PAPER/ GRINDERS / DESIGNER LIGHTERS ",
+      desc: "TOP NOTCH TECHNOLOGIES ",
       bg: "fbf0f4",
     },
   ];
@@ -25,21 +25,21 @@ export const sliderItems = [
   export const categories = [
     {
       id: 1,
-      img: "https://images.dutchie.com/19f290a6d68a972eff5365bb59040920?auto=format&ixlib=react-9.0.2",
+      img: "https://i.insider.com/5bb7d3979fb84c673c033016?width=700",
       title: "GADGET",
-      cat:"cannabis"
+      cat:"GADGETS"
     },
     {
       id: 2,
-      img: "https://emilykylenutrition.com/wp-content/uploads/2020/05/Cannabis-Brownies-from-Emily-Kyle-Nutrition8-e1590527717444.jpg",
-      title: "BROWNIES",
-      cat:"bakery"
+      img: "https://img.freepik.com/free-photo/charming-man-posing-with-copy-space_23-2148448843.jpg",
+      title: "MEN",
+      cat:"MEN"
     },
     {
       id: 3,
-      img: "https://cannabisandglass.com/wp-content/uploads/2022/03/Roll-a-Joint-Like-the-Experts.jpg",
-      title: "CANNABIS ",
-      cat:"loud"
+      img: "https://ccolor.com/wp-content/uploads/2019/11/fall_black_blog_header.jpg",
+      title: "WOMEN ",
+      cat:"WOMEN"
     },
   ];
 

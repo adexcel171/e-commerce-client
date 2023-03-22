@@ -88,7 +88,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left> 
-           <Link to='/'><Logo>Excel $</Logo></Link> 
+           <Link style={{textDecoration:'none', color: 'black', fontFamily:'Ariel' }} to='/'><Logo>Xcel $</Logo></Link> 
            
            <Language></Language>
         </Left>
