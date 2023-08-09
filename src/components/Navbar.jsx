@@ -93,11 +93,11 @@ const Navbar = () => {
            <Language></Language>
         </Left>
         <Center>
-{/*  
+ 
           <SearchContainer>
             <Input placeholder="Search..." type="text" />
             
-          </SearchContainer> */}
+          </SearchContainer>
         </Center>
         <Right>
           <MenuItem> <Link style={{ textDecoration:'none', color: 'black'}} to='/Register' >Register</Link> </MenuItem>
