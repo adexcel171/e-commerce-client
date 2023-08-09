@@ -1,5 +1,5 @@
 import { Badge } from "@material-ui/core";
-import { HowToRegOutlined, Search, ShoppingCartOutlined, VerifiedUserOutlined } from "@material-ui/icons";
+import { HowToRegOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
@@ -36,14 +36,17 @@ const Language = styled.span`
 `;
 
 const SearchContainer = styled.div`
-  border: 0.5px solid lightgray;
+  border: 0.9px solid lightblue;
   display: flex;
   align-items: center;
-
+width: 250px;
   padding: 5px;
 `;
 
 const Input = styled.input`
+width: 200px;
+border-radius: 12px;
+padding: 8px;
 
   
   ${mobile({ width: "50px" })}
@@ -99,7 +102,7 @@ const Navbar = () => {
  
           <SearchContainer>
             <Input placeholder="Search..." type="text" />
-            
+            <SearchOutlined/>
           </SearchContainer>
         </Center>
         <Right>
