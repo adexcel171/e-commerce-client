@@ -1,11 +1,14 @@
 import { Badge } from "@material-ui/core";
-import { Search, ShoppingCartOutlined } from "@material-ui/icons";
+import { HowToRegOutlined, Search, ShoppingCartOutlined, VerifiedUserOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { useSelector, useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
 import { logout } from "../redux/userRedux";
+import LoginIcon from '@mui/icons-material/Login';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+
 
 const Container = styled.div`
   height: 60px;
@@ -100,12 +103,12 @@ const Navbar = () => {
           </SearchContainer>
         </Center>
         <Right>
-          <MenuItem> <Link style={{ textDecoration:'none', color: 'black'}} to='/Register' >Register</Link> </MenuItem>
-          <MenuItem> <Link  style={{ textDecoration:'none', color: 'black'}} to='/Login' >Login</Link> </MenuItem>
+          <MenuItem> <Link style={{ textDecoration:'none', color: 'black'}} to='/Register'  > <HowToRegOutlined/> Register</Link> </MenuItem>
+          <MenuItem> <Link  style={{ textDecoration:'none', color: 'black'}} to='/Login'> <LoginIcon/>  Login   </Link> </MenuItem>
 
-         <MenuItem onClick={handleLogout}>Logout</MenuItem> 
-    
-      
+         <MenuItem onClick={handleLogout}>   <LogoutOutlinedIcon />
+        Logout</MenuItem> 
+  
      
           <Link to="/cart">
           <MenuItem>
