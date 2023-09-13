@@ -1,6 +1,6 @@
-import { Badge } from "@material-ui/core";
-import { HowToRegOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons";
-import React from "react";
+
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { useSelector, useDispatch} from "react-redux";
@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import { logout } from "../redux/userRedux";
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import HowToRegOutlinedIcon from '@mui/icons-material/HowToRegOutlined';
+
 
 
 const Container = styled.div`
@@ -39,13 +41,15 @@ const SearchContainer = styled.div`
   border: 0.9px solid lightblue;
   display: flex;
   align-items: center;
-width: 250px;
+  border-radius:16px;
+width: 400px;
   padding: 5px;
+  
 `;
 
 const Input = styled.input`
-width: 200px;
-border-radius: 12px;
+width: 300px;
+border-radius: 14px;
 padding: 8px;
 
   
@@ -94,30 +98,35 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left> 
-           <Link style={{textDecoration:'none', color: 'black', fontFamily:'Ariel' }} to='/'><Logo>Xcel $</Logo></Link> 
+           <Link style={{textDecoration:'none', color: 'black', fontFamily:'Ariel' }} to='/'><Logo>BIG X</Logo></Link> 
            
-           <Language></Language>
+           <Language>EN</Language>
         </Left>
         <Center>
  
           <SearchContainer>
             <Input placeholder="Search..." type="text" />
-            <SearchOutlined/>
+          <SearchIcon/>
           </SearchContainer>
         </Center>
         <Right>
-          <MenuItem> <Link style={{ textDecoration:'none', color: 'black'}} to='/Register'  > <HowToRegOutlined/> Register</Link> </MenuItem>
-          <MenuItem> <Link  style={{ textDecoration:'none', color: 'black'}} to='/Login'> <LoginIcon/>  Login   </Link> </MenuItem>
+          <MenuItem> <Link style={{ textDecoration:'none', color: 'black'}} to='/Register'  > 
+          <HowToRegOutlinedIcon/> 
+           Register</Link> </MenuItem>
+          <MenuItem> <Link  style={{ textDecoration:'none', color: 'black'}} to='/Login'> 
+          <LoginIcon/>
+           Login   </Link> </MenuItem>
 
-         <MenuItem onClick={handleLogout}>   <LogoutOutlinedIcon />
+         <MenuItem onClick={handleLogout}> 
+          <LogoutOutlinedIcon />
         Logout</MenuItem> 
   
      
           <Link to="/cart">
           <MenuItem>
-            <Badge badgeContent={quantity} color="primary">
-              <ShoppingCartOutlined />
-            </Badge>
+        
+          < ShoppingCartOutlinedIcon/>
+                
           </MenuItem>
           </Link>
         </Right>

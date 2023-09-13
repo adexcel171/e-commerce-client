@@ -6,11 +6,13 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 import Slider from "../components/Slider";
+import Annouce from "../components/anoouce/Annouce";
 
 const Home = () => {
   return (
     <div>
-      <Announcement />
+      {/* <Announcement /> */}
+      <Annouce/>
       <Navbar />
       <Slider />
       <Categories />

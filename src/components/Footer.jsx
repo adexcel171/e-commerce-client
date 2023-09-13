@@ -1,12 +1,4 @@
-import {
-  Facebook,
-  Instagram,
-  MailOutline,
-  Phone,
-  Pinterest,
-  Room,
-  Twitter,
-} from "@material-ui/icons";
+
 import styled from "styled-components";
 import { mobile } from "../responsive";
 
@@ -96,16 +88,16 @@ const Footer = () => {
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
-            <Facebook />
+            {/* <Facebook /> */}
           </SocialIcon>
           <SocialIcon color="E4405F">
-            <Instagram />
+            {/* <Instagram /> */}
           </SocialIcon>
           <SocialIcon color="55ACEE">
-            <Twitter />
+            {/* <Twitter /> */}
           </SocialIcon>
           <SocialIcon color="E60023">
-            <Pinterest />
+            {/* <Pinterest /> */}
           </SocialIcon>
         </SocialContainer>
       </Left>
@@ -127,15 +119,15 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room style={{marginRight:"10px"}}/> Asokoro, Abuja, Nigeria
+          {/* <Room style={{marginRight:"10px"}}/> Asokoro, Abuja, Nigeria */}
         </ContactItem>
         <ContactItem>
-          <Phone style={{marginRight:"10px"}}/> +234 922 3162
+          {/* <Phone style={{marginRight:"10px"}}/> +234 922 3162 */}
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> contact@godwillokenyi@gmail.com
+          {/* <MailOutline style={{marginRight:"10px"}} /> contact@godwillokenyi@gmail.com */}
         </ContactItem>
-        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
+        {/* <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" /> */}
       </Right>
     </Container>
   );

@@ -1,8 +1,8 @@
-import {
-  FavoriteBorderOutlined,
-  SearchOutlined,
-  ShoppingCartOutlined,
-} from "@material-ui/icons";
+// import {
+//   FavoriteBorderOutlined,
+//   SearchOutlined,
+//   ShoppingCartOutlined,
+// } from "@material-ui/icons";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -89,15 +89,15 @@ const Product = ({ item}) => {
       <Image src={item.img} />
       <Info>
         <Icon to={`/product/${item._id}`}  onClick={handleClick} >
-          <ShoppingCartOutlined />
+          {/* <ShoppingCartOutlined /> */}
         </Icon>
         <Icon>
           <Link to={`/product/${item._id}`}>
-          <SearchOutlined />
+          {/* <SearchOutlined /> */}
           </Link>
         </Icon>
         <Icon>
-          <FavoriteBorderOutlined />
+          {/* <FavoriteBorderOutlined /> */}
         </Icon>
       </Info>
     
