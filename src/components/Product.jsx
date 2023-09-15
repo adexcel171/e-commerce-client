@@ -1,8 +1,6 @@
-// import {
-//   FavoriteBorderOutlined,
-//   SearchOutlined,
-//   ShoppingCartOutlined,
-// } from "@material-ui/icons";
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import SearchOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -39,7 +37,19 @@ const Container = styled.div`
     opacity: 1;
   }
 `;
+const Title = styled.h3`
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  margin-top: 40px;
+`
 
+const Price = styled.span`
+position: absolute;
+color: green;
+bottom: 0;
+right: 0;
+`;
 const Circle = styled.div`
   width: 200px;
   height: 200px;
@@ -51,6 +61,7 @@ const Circle = styled.div`
 const Image = styled.img`
   height: 75%;
   z-index: 2;
+  object-fit: cover;
 `;
 
 const Icon = styled.div`
@@ -89,17 +100,22 @@ const Product = ({ item}) => {
       <Image src={item.img} />
       <Info>
         <Icon to={`/product/${item._id}`}  onClick={handleClick} >
-          {/* <ShoppingCartOutlined /> */}
+          <ShoppingCartOutlinedIcon />
         </Icon>
         <Icon>
           <Link to={`/product/${item._id}`}>
-          {/* <SearchOutlined /> */}
+          <SearchOutlinedIcon />
           </Link>
         </Icon>
         <Icon>
-          {/* <FavoriteBorderOutlined /> */}
+          <FavoriteBorderOutlinedIcon />
         </Icon>
+        <span></span>
+        <span></span>
       </Info>
+      <Title>{item.title}</Title>
+      <Price>${item.price}</Price>
+      
     
 
     </Container>

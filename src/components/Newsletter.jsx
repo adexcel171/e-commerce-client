@@ -1,4 +1,4 @@
-// import { Send } from "@material-ui/icons";
+import SendIcon from '@mui/icons-material/Send';
 import styled from "styled-components";
 import { mobile } from "../responsive";
 
@@ -9,9 +9,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 8px 2px;
 `;
 const Title = styled.h1`
-  font-size: 70px;
+  font-size: 60px;
   margin-bottom: 20px;
 `;
 
@@ -24,7 +25,7 @@ const Desc = styled.div`
 `;
 
 const InputContainer = styled.div`
-  width: 50%;
+  width: 40%;
   height: 40px;
   background-color: white;
   display: flex;
@@ -54,7 +55,7 @@ const Newsletter = () => {
       <InputContainer>
         <Input placeholder="Your email" />
         <Button>
-          {/* <Send /> */}
+          <SendIcon/>
         </Button>
       </InputContainer>
     </Container>

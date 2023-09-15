@@ -8,9 +8,11 @@ import { mobile } from "../responsive";
 import StripeCheckout from "react-stripe-checkout";
 import { useEffect, useState } from "react";
 import { userRequest } from "../requestMethods";
-import { useHistory } from "react-router";
 import { clearProduct } from "../redux/cartRedux";
 import { useDispatch } from "react-redux";
+import { useNavigate } from 'react-router-dom';
+
+
 
 const KEY = process.env.REACT_APP_STRIPE;
 
@@ -165,32 +167,42 @@ const Cart = () => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
   const [stripeToken, setStripeToken] = useState(null);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const onToken = (token) => {
     setStripeToken(token);
   };
 
   useEffect(() => {
-    const makeRequest = async () => {
-      try {
-        const res = await userRequest.post("/checkout/payment", {
-          tokenId: stripeToken.id,
-          amount: 500,
-        });
-        history.push("/success", {
+  const makeRequest = async () => {
+    try {
+      const res = await userRequest.post("/checkout/payment", {
+        tokenId: stripeToken.id,
+        amount: 500,
+      });
+      navigate("/success", {
+        state: {
           stripeData: res.data,
-          products: cart, });
-      } catch {}
-    };
-    stripeToken && makeRequest();
-  }, [stripeToken, cart.total, cart, history]);
+          products: cart,
+        },
+      });
+    } catch (error) {
+      // Handle error
+    }
+  };
+
+  if (stripeToken) {
+    makeRequest();
+  }
+}, [stripeToken, cart.total, cart, navigate]);
+
 
   const handleClick=(e)=>{
   
     dispatch(clearProduct())
     
   }
+  
   return (
     <Container>
       <Navbar />
