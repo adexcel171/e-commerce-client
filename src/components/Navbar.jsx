@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  ${mobile({ padding: "10px 0px" })}
+  ${mobile({ padding: "3px 16px" })}
 `;
 
 const Left = styled.div`
@@ -79,12 +79,15 @@ const Right = styled.div`
 
 const MenuItem = styled.div`
   text-decoration: none;
-  font-size: 14px;
+
+  font-size: 12px;
   cursor: pointer;
   margin-left: 25px;
   font-family: poppins;
+ 
 
-  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+
+  ${mobile({ fontSize: "12px", marginRight: "16px" })}
 `;
 
 const Navbar = () => {
@@ -104,7 +107,7 @@ const Navbar = () => {
             style={{ textDecoration: "none", color: "black", fontFamily: "Poppins" }}
             to="/"
           >
-            <Logo>BIG X</Logo>
+            <Logo>BIGX</Logo>
           </Link>
           <Language>EN</Language>
         </Left>

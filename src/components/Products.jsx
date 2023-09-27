@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 import Product from "./Product";
 import axios from "axios";
@@ -9,6 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  ${mobile({ display: "flex", justifyContent:"center" })}
 `;
 
 const Products = ({ cat, filters, sort }) => {
