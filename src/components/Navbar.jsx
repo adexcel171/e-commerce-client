@@ -1,6 +1,7 @@
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import styled from "styled-components";
+import { Badge } from "@mui/material";
 import { mobile } from "../responsive";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
@@ -133,10 +134,11 @@ const Navbar = () => {
             Logout
           </MenuItem>
           <Link to="/cart">
-            <MenuItem>
-            
-              <ShoppingCartOutlinedIcon />
-            </MenuItem>
+          <MenuItem>
+            <Badge badgeContent={quantity} color="primary">
+          <ShoppingCartOutlinedIcon/>
+            </Badge>
+          </MenuItem>
           </Link>
         </Right>
       </Wrapper>
