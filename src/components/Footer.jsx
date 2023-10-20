@@ -1,3 +1,10 @@
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from '@mui/icons-material/Phone';
+import MailIcon from '@mui/icons-material/Mail';
 
 import styled from "styled-components";
 import { mobile } from "../responsive";
@@ -80,7 +87,7 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>XCEL $ Shop </Logo>
+        <Logo>BIGX </Logo>
         <Desc>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -88,16 +95,16 @@ const Footer = () => {
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
-            {/* <Facebook /> */}
+  < FacebookIcon/>
           </SocialIcon>
           <SocialIcon color="E4405F">
-            {/* <Instagram /> */}
+            <InstagramIcon />
           </SocialIcon>
           <SocialIcon color="55ACEE">
-            {/* <Twitter /> */}
+            <TwitterIcon />
           </SocialIcon>
           <SocialIcon color="E60023">
-            {/* <Pinterest /> */}
+            <PinterestIcon />
           </SocialIcon>
         </SocialContainer>
       </Left>
@@ -119,15 +126,16 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          {/* <Room style={{marginRight:"10px"}}/> Asokoro, Abuja, Nigeria */}
+          < LocationOnIcon style={{marginRight:"10px"}}/>
+           Asokoro, Abuja, Nigeria
         </ContactItem>
         <ContactItem>
-          {/* <Phone style={{marginRight:"10px"}}/> +234 922 3162 */}
+          <PhoneIcon style={{marginRight:"10px"}}/> +234 922 3162
         </ContactItem>
         <ContactItem>
-          {/* <MailOutline style={{marginRight:"10px"}} /> contact@godwillokenyi@gmail.com */}
+          <MailIcon style={{marginRight:"10px"}} /> contact@godwillokenyi@gmail.com
         </ContactItem>
-        {/* <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" /> */}
+        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
     </Container>
   );

@@ -105,6 +105,7 @@ const PriceDetail = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 8px;
 `;
 
 const ProductAmountContainer = styled.div`
